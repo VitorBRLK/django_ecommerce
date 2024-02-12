@@ -1,0 +1,97 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <meta http-equiv="x-ua-compatible" content="ie=edge" />
+    <title>Material Design for Bootstrap</title>
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.11.2/css/all.css" />
+    <!-- Google Fonts Roboto -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" />
+    <!-- MDB -->
+    <link rel="stylesheet" href="{% static 'assets/css/mdb.min.css' %}" />
+    <!-- Custom styles -->
+    <link rel="stylesheet" href="{% static 'assets/css/style.css' %}" />
+</head>
+<body>
+    <!--Main Navigation-->
+<header>
+    <!-- Collapsible wrapper -->
+    <div class="collapse navbar-collapse" id="navbarLeftAlignExample">
+        <!-- Left links -->
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link text-dark" aria-current="page" href="#">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-dark" href="#">Categories</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-dark" href="#">Hot offers</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-dark" href="#">Gift boxes</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-dark" href="#">Projects</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-dark" href="#">Menu item</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-dark" href="#">Menu name</a>
+          </li>
+          <!-- Navbar dropdown -->
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle text-dark" href="#" id="navbarDropdown" role="button" data-mdb-toggle="dropdown" aria-expanded="false">
+              Others
+            </a>
+            <!-- Dropdown menu -->
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <li>
+                <a class="dropdown-item" href="#">Action</a>
+              </li>
+              <li>
+                <a class="dropdown-item" href="#">Another action</a>
+              </li>
+              <li><hr class="dropdown-divider" /></li>
+              <li>
+                <a class="dropdown-item" href="#">Something else here</a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+        <!-- Left links -->
+      </div>
+    </div>
+    <!-- Container wrapper -->
+  </nav>
+  <!-- Navbar -->
+  <!-- Jumbotron -->
+  <div class="bg-primary text-white py-5">
+    <div class="container py-5">
+      <h1>
+        Best products & <br />
+        brands in our store
+      </h1>
+      <p>
+        Trendy Products, Factory Prices, Excellent Service
+      </p>
+      <button type="button" class="btn btn-outline-light">
+        Learn more
+      </button>
+      <button type="button" class="btn btn-light shadow-0 text-primary pt-2 border border-white">
+        <span class="pt-1">Purchase now</span>
+      </button>
+    </div>
+  </div>
+  <!-- Jumbotron -->
+</header>
+
+{% block content  %}    
+
+{% endblock content %}
+
